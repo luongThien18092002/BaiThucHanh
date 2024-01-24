@@ -1,17 +1,5 @@
 /*Lương Kim Thiện-2021040082*/
-ul.a {
-  list-style-type: circle;
-}
-
-ul.b {
-  list-style-type: square;
-}
-
-ol.c {
-  list-style-type: upper-roman;
-}
-
-ol.d {
-  list-style-type: lower-alpha;
-}
-/*đây là lần thay đổi thứ 26*/
+document.getElementById("demo").style.fontSize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor = "yellow";
+/*đây là lần thay đổi thứ 29*/
