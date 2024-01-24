@@ -1,7 +1,8 @@
 /*Lương Kim Thiện-2021040082*/
 div {
-  height: 200px;
-  width: 50%;
-  background-color: powderblue;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
 }
-/*đây là lần thay đổi thứ 19*/
+/*đây là lần thay đổi thứ 20*/
