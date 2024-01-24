@@ -1,8 +1,10 @@
 /*Lương Kim Thiện-2021040082*/
-div {
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-}
-/*đây là lần thay đổi thứ 20*/
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+/*đây là lần thay đổi thứ 21*/
