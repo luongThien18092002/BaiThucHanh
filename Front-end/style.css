@@ -1,16 +1,8 @@
 /*Lương Kim Thiện-2021040082*/
-p.one {
-  border-style: solid;
-  border-color: red;
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
 }
-
-p.two {
-  border-style: solid;
-  border-color: green;
-}
-
-p.three {
-  border-style: dotted;
-  border-color: blue;
-}
-/*đây là lần thay đổi thứ 12*/
+/*đây là lần thay đổi thứ 13*/
