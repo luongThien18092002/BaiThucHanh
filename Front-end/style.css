@@ -1,19 +1,16 @@
 /*Lương Kim Thiện-2021040082*/
-p.ex1 {
-  border: 2px solid black;
-  outline-style: solid;
-  outline-color: red;
+body {
+  background-color: lightgrey;
+  color: blue;
 }
 
-p.ex2 {
-  border: 2px solid black;
-  outline-style: dotted;
-  outline-color: blue;
+h1 {
+  background-color: black;
+  color: white;
 }
 
-p.ex3 {
-  border: 2px solid black;
-  outline-style: outset;
-  outline-color: grey;
+div {
+  background-color: blue;
+  color: white;
 }
-/*đây là lần thay đổi thứ 23*/
+/*đây là lần thay đổi thứ 24*/
