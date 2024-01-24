@@ -1,16 +1,16 @@
 /*Lương Kim Thiện-2021040082*/
 p.one {
   border-style: solid;
-  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+  border-color: red;
 }
 
 p.two {
   border-style: solid;
-  border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+  border-color: green;
 }
 
 p.three {
-  border-style: solid;
-  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+  border-style: dotted;
+  border-color: blue;
 }
-/*đây là lần thay đổi thứ 11*/
+/*đây là lần thay đổi thứ 12*/
