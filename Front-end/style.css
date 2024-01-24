@@ -1,16 +1,13 @@
 /*Lương Kim Thiện-2021040082*/
-body {
-  background-color: lightgrey;
-  color: blue;
+.p1 {
+  font-family: "Times New Roman", Times, serif;
 }
 
-h1 {
-  background-color: black;
-  color: white;
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-div {
-  background-color: blue;
-  color: white;
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
 }
-/*đây là lần thay đổi thứ 24*/
+/*đây là lần thay đổi thứ 25*/
