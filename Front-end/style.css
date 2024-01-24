@@ -1,7 +1,13 @@
 /*Lương Kim Thiện-2021040082*/
-body {
-  background-color: #ffffff;
-  background-image: url("img_tree.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+/*đây là lần thay đổi thứ 11*/
