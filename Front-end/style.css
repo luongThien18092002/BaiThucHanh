@@ -1,29 +1,19 @@
 /*Lương Kim Thiện-2021040082*/
 p.ex1 {
-  border: 1px solid black;
+  border: 2px solid black;
   outline-style: solid;
   outline-color: red;
-  outline-width: thin;
 }
 
 p.ex2 {
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: red;
-  outline-width: medium;
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: blue;
 }
 
 p.ex3 {
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: red;
-  outline-width: thick;
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
 }
-
-p.ex4 {
-  border: 1px solid black;
-  outline-style: solid;
-  outline-color: red;
-  outline-width: 4px;
-}
-/*đây là lần thay đổi thứ 22*/
+/*đây là lần thay đổi thứ 23*/
