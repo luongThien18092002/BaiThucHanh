@@ -1,4 +1,7 @@
 /*Lương Kim Thiện-2021040082*/
 body {
-  background-image: url("gradient_bg.png");
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
