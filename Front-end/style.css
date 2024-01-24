@@ -1,13 +1,21 @@
 /*Lương Kim Thiện-2021040082*/
-.p1 {
-  font-family: "Times New Roman", Times, serif;
+/* unvisited link */
+a:link {
+  color: red;
 }
 
-.p2 {
-  font-family: Arial, Helvetica, sans-serif;
+/* visited link */
+a:visited {
+  color: green;
 }
 
-.p3 {
-  font-family: "Lucida Console", "Courier New", monospace;
+/* mouse over link */
+a:hover {
+  color: hotpink;
 }
-/*đây là lần thay đổi thứ 25*/
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/*đây là lần thay đổi thứ 26*/
