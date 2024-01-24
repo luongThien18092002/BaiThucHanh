@@ -1,5 +1,5 @@
 /*Lương Kim Thiện-2021040082*/
-document.getElementById("demo").style.fontSize = "25px";
-document.getElementById("demo").style.color = "red";
-document.getElementById("demo").style.backgroundColor = "yellow";
-/*đây là lần thay đổi thứ 29*/
+span {
+  display: block;
+}
+/*đây là lần thay đổi thứ 30*/
