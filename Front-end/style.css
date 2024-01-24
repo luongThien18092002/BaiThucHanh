@@ -1,13 +1,6 @@
 /*Lương Kim Thiện-2021040082*/
-div.ex1 {
-  width: 500px;
-  margin: auto;
+div.static {
+  position: static;
   border: 3px solid #73AD21;
 }
-
-div.ex2 {
-  max-width: 500px;
-  margin: auto;
-  border: 3px solid #73AD21;
-}
-/*đây là lần thay đổi thứ 30*/
+/*đây là lần thay đổi thứ 31*/
