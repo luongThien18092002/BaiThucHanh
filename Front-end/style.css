@@ -1,21 +1,17 @@
 /*Lương Kim Thiện-2021040082*/
-/* unvisited link */
-a:link {
-  color: red;
+ul.a {
+  list-style-type: circle;
 }
 
-/* visited link */
-a:visited {
-  color: green;
+ul.b {
+  list-style-type: square;
 }
 
-/* mouse over link */
-a:hover {
-  color: hotpink;
+ol.c {
+  list-style-type: upper-roman;
 }
 
-/* selected link */
-a:active {
-  color: blue;
+ol.d {
+  list-style-type: lower-alpha;
 }
 /*đây là lần thay đổi thứ 26*/
