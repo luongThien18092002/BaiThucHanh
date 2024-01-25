@@ -1,30 +1,27 @@
 /*Lương Kim Thiện-2021040082*/
 /* unvisited link */
+<html>
+<head>
 <style>
-.dropdown {
-  position: relative;
-  display: inline-block;
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+div.gallery:hover {
+  border: 1px solid #777;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
-</style>
 
-<div class="dropdown">
-  <span>Mouse over me</span>
-  <div class="dropdown-content">
-    <p>Hello World!</p>
-  </div>
-</div>
-/*đây là lần thay đổi thứ 40*/
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/*đây là lần thay đổi thứ 41*/
