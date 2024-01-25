@@ -1,14 +1,28 @@
 /*Lương Kim Thiện-2021040082*/
-img {
-  float: right;
-}
-* {
-  box-sizing: border-box;
+span.a {
+  display: inline; /* the default for span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
 }
 
-.box {
-  float: left;
-  width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
-  padding: 50px; /* if you want space between the images */
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
 }
-/*đây là lần thay đổi thứ 33*/
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+/*đây là lần thay đổi thứ 34*/
