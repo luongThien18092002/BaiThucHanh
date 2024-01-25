@@ -1,27 +1,36 @@
 /*Lương Kim Thiện-2021040082*/
-/* unvisited link */
-<html>
-<head>
-<style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+#navlist {
+  position: relative;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
+#navlist li, #navlist a {
+  height: 44px;
+  display: block;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
+#home {
+  left: 0px;
+  width: 46px;
+  background: url('img_navsprites.gif') 0 0;
 }
 
-/*đây là lần thay đổi thứ 41*/
+#prev {
+  left: 63px;
+  width: 43px;
+  background: url('img_navsprites.gif') -47px 0;
+}
+
+#next {
+  left: 129px;
+  width: 43px;
+  background: url('img_navsprites.gif') -91px 0;
+}
+/*đây là lần thay đổi thứ 42*/
