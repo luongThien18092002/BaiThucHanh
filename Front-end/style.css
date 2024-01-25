@@ -1,15 +1,19 @@
 /*Lương Kim Thiện-2021040082*/
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+body {
+  counter-reset: section;
 }
-input[type=text] {
-  background-color: white;
-  background-image: url('searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding-left: 40px;
+
+h1 {
+  counter-reset: subsection;
 }
-/*đây là lần thay đổi thứ 44*/
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+/*đây là lần thay đổi thứ 45*/
