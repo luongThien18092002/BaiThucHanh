@@ -1,20 +1,15 @@
 /*Lương Kim Thiện-2021040082*/
-[title~="flower"] {
-  border: 5px solid yellow;
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
-[class*="te"] {
-  background: yellow;
+input[type=text] {
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
 }
-input[type="text"] {
-  width: 150px;
-  display: block;
-  margin-bottom: 10px;
-  background-color: yellow;
-}
-
-input[type="button"] {
-  width: 120px;
-  margin-left: 35px;
-  display: block;
-}
-/*đây là lần thay đổi thứ 43*/
+/*đây là lần thay đổi thứ 44*/
