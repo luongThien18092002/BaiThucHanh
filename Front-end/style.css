@@ -1,28 +1,21 @@
 /*Lương Kim Thiện-2021040082*/
-span.a {
-  display: inline; /* the default for span */
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border: 1px solid blue;
+.nav {
   background-color: yellow;
+  list-style-type: none;
+  text-align: center; 
+  padding: 0;
+  margin: 0;
 }
 
-span.b {
+.nav li {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border: 1px solid blue;
-  background-color: yellow;
+  font-size: 20px;
+  padding: 20px;
 }
-
-span.c {
-  display: block;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  border: 1px solid blue;
-  background-color: yellow;
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
-/*đây là lần thay đổi thứ 34*/
+/*đây là lần thay đổi thứ 35*/
