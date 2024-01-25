@@ -1,19 +1,23 @@
 /*Lương Kim Thiện-2021040082*/
-body {
-  counter-reset: section;
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-h1 {
-  counter-reset: subsection;
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-h1::before {
-  counter-increment: section;
-  content: "Section " counter(section) ". ";
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
-
-h2::before {
-  counter-increment: subsection;
-  content: counter(section) "." counter(subsection) " ";
-}
-/*đây là lần thay đổi thứ 45*/
+/*đây là lần thay đổi thứ 46*/
