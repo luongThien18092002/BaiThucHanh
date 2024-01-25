@@ -1,8 +1,14 @@
 /*Lương Kim Thiện-2021040082*/
-div {
-  width: 200px;
-  height: 65px;
-  background-color: coral;
-  overflow: visible;
+img {
+  float: right;
 }
-/*đây là lần thay đổi thứ 32*/
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+  padding: 50px; /* if you want space between the images */
+}
+/*đây là lần thay đổi thứ 33*/
