@@ -1,28 +1,30 @@
 /*Lương Kim Thiện-2021040082*/
 /* unvisited link */
-<ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-</ul>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 60px;
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-li a {
-  display: block;
-}
-li {
-  float: left;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
 }
 
-a {
+.dropdown:hover .dropdown-content {
   display: block;
-  padding: 8px;
-  background-color: #dddddd;
 }
-/*đây là lần thay đổi thứ 39*/
+</style>
+
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+    <p>Hello World!</p>
+  </div>
+</div>
+/*đây là lần thay đổi thứ 40*/
