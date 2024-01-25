@@ -1,10 +1,24 @@
 /*Lương Kim Thiện-2021040082*/
-h1 {
-  font-size: 60px;
+#myid {
+  background-color: blue;
+}
+
+.myclass {
+  background-color: gray;
 }
 
 p {
-  font-size: 25px;
-  line-height: 50px;
+  background-color: red !important;
 }
-/*đây là lần thay đổi thứ 47*/
+#myid {
+  background-color: blue !important;
+}
+
+.myclass {
+  background-color: gray !important;
+}
+
+p {
+  background-color: red !important;
+}
+/*đây là lần thay đổi thứ 49*/
