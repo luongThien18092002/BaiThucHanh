@@ -1,7 +1,7 @@
-using DemoMVC.Models;
+using FirstWebMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DemoMVC.Controllers
+namespace FirstWebMVC.Controllers
 {
     public class HeThongPhanPhoiController : Controller
     {
