@@ -12,7 +12,7 @@ namespace FirstWebMVC.Controllers
         [HttpPost]
         public IActionResult Index(Employee ps)
         {
-            string strOutput = " Xin chào " + ps.PersonId + "-" + ps.FullName + "-" +  ps.Address + "-" + ps.EmployeeId + "-" + ps.Age;
+            string strOutput = " Xin chào " + ps.EmployeeId + "-" + ps.FullName + "-" +  ps.Address + "-" + ps.EmployeeId + "-" + ps.Age;
             ViewBag.infoEmployee = strOutput;
             return View();
         }
