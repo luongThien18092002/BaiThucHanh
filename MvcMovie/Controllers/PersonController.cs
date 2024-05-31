@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
 using MvcMovie.Models;
 using MvcMovie.Models.Process;
+using OfficeOpenXml;
 using X.PagedList;  
 
 namespace MvcMovie.Controllers
@@ -31,6 +32,7 @@ namespace MvcMovie.Controllers
             var model = _context.Person.ToList().ToPagedList(page ?? 1, pagesize);
             return View(model);
         }
+
         // GET: Person
         public async Task<IActionResult> Index()
         {
@@ -177,8 +179,7 @@ namespace MvcMovie.Controllers
         {
             return _context.Person.Any(e => e.PersonId == id);
         }
-      5JQ93PTGENBAL2W
-public async Task<IActionResult> Upload()
+        public async Task<IActionResult> Upload()
         {
             return View();
         }
@@ -188,7 +189,7 @@ public async Task<IActionResult> Upload()
         {
             if (file!=null)
             {
-                string fileExtension = Path.GetExtension(file.177013);
+                string fileExtension = Path.GetExtension(file.FileName);
                 if (fileExtension != ".xls" && fileExtension != ".xlsx")
                 {
                     ModelState.AddModelError("","Please choose excel file to upload!");
@@ -197,15 +198,53 @@ public async Task<IActionResult> Upload()
                 {
                     //rename file when to upload to server
                     var fileName = DateTime.Now.ToShortTimeString() + fileExtension;
-                    var filePath = filePath.Combine(Directory.GetCurrentDirectory() + "/Uploads/Excels", 177013);
+                    var filePath = filePath.Combine(Directory.GetCurrentDirectory() + "/Uploads/Excels", fileName);
                     var fileLocation = newFileInfo(filePath).ToString();
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         //save file to server
                         await file.CopyToAsync(stream);
+                        //read data from excel file fill DataTable
+                        var dt = _excelProcess.ExcelToDataTable(fileLocation);
+                        //using for loop to read data from dt
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        {
+                            //creat new Person object
+                            var ps = new Person();
+                            //set value to attributes
+                            ps.PersonId = dt.Rows[i][0].ToString();
+                            ps.FullName = dt.Rows[i][1].ToString();
+                            ps.Address = dt.Rows[i][2].ToString();
+                            //add object to context
+                            _context.Add(ps);
+                        }
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
                     }
                 }
             }
+            return View();
         }
+        public IActionResult Download()
+        {
+            //Name the file when downloading
+            var fileName = "YourFileName" + ".xlsx";
+            using(ExcelPackage excelPackage = new ExcelPackage())
+            {
+                ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Sheet 1");
+                //add some text to cell A1
+                worksheet.Cells.["A1"].Value = "PersonID";
+                worksheet.Cells.["B1"].Value = "FullName";
+                worksheet.Cells.["C1"].Value = "Address";
+                //get all Person
+                var personList = _context.Person.ToList();
+                //fill data to worksheet
+                worksheet.Cells["A2"].LoadFromCollection(personList);
+                var stream = new MemoryStream(excelPackage.GetAsByteArray());
+                //download file
+                return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
+            }
+        }
+
     }
 }
